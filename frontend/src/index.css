@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        --background: 0.98 0.01 300;
+        --foreground: 0.15 0.02 300;
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.02 300;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.02 300;
+        --primary: 0.55 0.22 300;
+        --primary-foreground: 0.99 0 0;
+        --secondary: 0.92 0.03 300;
+        --secondary-foreground: 0.15 0.02 300;
+        --muted: 0.95 0.02 300;
+        --muted-foreground: 0.50 0.02 300;
+        --accent: 0.65 0.25 150;
+        --accent-foreground: 0.99 0 0;
+        --destructive: 0.60 0.24 25;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.88 0.02 300;
+        --input: 0.88 0.02 300;
+        --ring: 0.55 0.22 300;
+        --chart-1: 0.65 0.25 150;
+        --chart-2: 0.55 0.22 300;
+        --chart-3: 0.60 0.24 25;
+        --chart-4: 0.70 0.20 45;
+        --chart-5: 0.50 0.25 300;
+        --sidebar: 0.98 0.01 300;
+        --sidebar-foreground: 0.15 0.02 300;
+        --sidebar-primary: 0.55 0.22 300;
+        --sidebar-primary-foreground: 0.99 0 0;
+        --sidebar-accent: 0.92 0.03 300;
+        --sidebar-accent-foreground: 0.15 0.02 300;
+        --sidebar-border: 0.88 0.02 300;
+        --sidebar-ring: 0.55 0.22 300;
+        
+        /* Game-specific colors */
+        --game-snake: 0.55 0.22 300;
+        --game-food: 0.60 0.24 25;
+        --game-grid: 0.92 0.02 300;
+        --game-bg: 0.98 0.01 300;
+    }
+
+    .dark {
+        --background: 0.12 0.02 300;
+        --foreground: 0.98 0.01 300;
+        --card: 0.18 0.02 300;
+        --card-foreground: 0.98 0.01 300;
+        --popover: 0.15 0.02 300;
+        --popover-foreground: 0.98 0.01 300;
+        --primary: 0.65 0.25 300;
+        --primary-foreground: 0.12 0.02 300;
+        --secondary: 0.22 0.02 300;
+        --secondary-foreground: 0.98 0.01 300;
+        --muted: 0.20 0.02 300;
+        --muted-foreground: 0.60 0.02 300;
+        --accent: 0.70 0.25 150;
+        --accent-foreground: 0.12 0.02 300;
+        --destructive: 0.65 0.24 25;
+        --destructive-foreground: 0.98 0.01 300;
+        --border: 0.25 0.02 300;
+        --input: 0.25 0.02 300;
+        --ring: 0.65 0.25 300;
+        --chart-1: 0.70 0.25 150;
+        --chart-2: 0.65 0.25 300;
+        --chart-3: 0.65 0.24 25;
+        --chart-4: 0.75 0.20 45;
+        --chart-5: 0.60 0.25 300;
+        --sidebar: 0.18 0.02 300;
+        --sidebar-foreground: 0.98 0.01 300;
+        --sidebar-primary: 0.65 0.25 300;
+        --sidebar-primary-foreground: 0.12 0.02 300;
+        --sidebar-accent: 0.22 0.02 300;
+        --sidebar-accent-foreground: 0.98 0.01 300;
+        --sidebar-border: 0.25 0.02 300;
+        --sidebar-ring: 0.65 0.25 300;
+        
+        /* Game-specific colors */
+        --game-snake: 0.65 0.25 300;
+        --game-food: 0.65 0.24 25;
+        --game-grid: 0.22 0.02 300;
+        --game-bg: 0.15 0.02 300;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer utilities {
+    .game-gradient {
+        background: linear-gradient(135deg, oklch(var(--primary) / 0.1) 0%, oklch(var(--accent) / 0.1) 100%);
+    }
+}
+

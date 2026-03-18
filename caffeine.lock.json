@@ -1,0 +1,9 @@
+{
+  "templates": {
+    "declaration_generator": "blob-10",
+    "build_template": "1.0.0"
+  },
+  "components": {},
+  "aiCoreVersion": "0.5.2",
+  "motokoVersion": "0.16.3-caffeine-4"
+}

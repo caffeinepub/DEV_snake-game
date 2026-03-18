@@ -1,0 +1,6 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system customized for a vibrant game theme with purple primary colors (hue 300) and red accent for food, supporting both light and dark modes with consistent purple accent across all UI elements.",
+  "frontend/src/App.tsx": "Main application component that renders the SnakeGame page component.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching high scores and submitting new scores to the backend.",
+  "frontend/src/pages/SnakeGame.tsx": "Complete Snake game implementation with canvas rendering, keyboard controls, score tracking, high scores leaderboard, game over dialog, instructions, and responsive layout with proper TypeScript ref initialization."
+}
